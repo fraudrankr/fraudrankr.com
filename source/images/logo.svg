@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<svg width="153" height="57" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="155" height="59" id="canvas_background" fill="none"/>
+  <g id="canvasGrid" display="none">
+   <rect id="svg_2" width="580" height="400" x="1" y="1" stroke-width="0" fill="url(#gridpattern)"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <text font-style="normal" fill="#008cba" stroke-width="0" x="18.5" y="37" id="svg_1" font-size="24" font-family="Helvetica, Arial, sans-serif" text-anchor="left" xml:space="preserve" stroke="#000" font-weight="normal">Fraudr&#226;nkr</text>
+ </g>
+</svg>

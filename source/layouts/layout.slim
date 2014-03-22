@@ -1,0 +1,47 @@
+doctype html
+/[if lt IE 7]
+  | <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+/[if IE 7]
+  | <html class="no-js lt-ie9 lt-ie8" lang="en">
+/[if IE 8]
+  | <html class="no-js lt-ie9" lang="en">
+| <!--[if gt IE 8]<!-->
+html.no-js lang="en"
+  | <!--<![endif]-->
+  head
+    /!
+     | You're reading. We're hiring.
+     | http://www.fraudrankr.com/jobs/
+     |
+
+    meta charset="utf-8"
+    meta http-equiv="X-UA-Compatible" content="IE=edge"
+    / Use title if it's in the page YAML frontmatter
+    title= current_page.data.title || ""
+    script src="/javascripts/vendor/modernizr.js"
+    meta name="description" content=""
+    meta name="viewport" content="width=device-width, initial-scale=1"
+
+    / Le HTML5 shim, for IE6-8 support of HTML elements
+    /[if lt IE 9]
+    script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"
+
+    = stylesheet_link_tag "all", media: "all"
+  body
+    div.container
+      div.header
+        ul.nav.nav-pills.pull-right
+          == nav_link_with_active 'Home', '/'
+          == nav_link_with_active 'How it works', '/how-it-works'
+          == nav_link_with_active 'Get started', '/get-started'
+          == nav_link_with_active 'Sign up', '/sign-up'
+          == nav_link_with_active 'Support', '/support'
+        h3
+          a href="/"
+            img src="/images/logo.svg"
+    div.container
+      div.container
+        = yield
+    div.container
+      = partial "layouts/footer"
+    script src="/javascripts/all.js"
