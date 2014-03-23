@@ -1,3 +1,5 @@
+require 'builder'
+
 ###
 # Compass
 ###
@@ -12,6 +14,8 @@
 ###
 
 # Per-page layout changes:
+#
+page "/sitemap.xml", :layout => false
 #
 # With no layout
 # page "/path/to/file.html", :layout => false

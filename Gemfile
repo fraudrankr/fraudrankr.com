@@ -18,6 +18,9 @@ gem 'bootstrap-sass'
 gem 'font-awesome-middleman'
 gem 'middleman-sprockets'
 
+# sitemap.xml
+gem 'builder'
+
 # Heroku hosting
 gem 'puma'
 gem 'rake'
