@@ -14,3 +14,8 @@ Fraudrankr collects all events that you provide to it and analyzes and compares
 patterns with known fraud patterns. Before accepting an e-commerce transaction
 you may ask Fraudrankr for a fraud Score of a given client, and then accept or
 reject the fraudulent customer.
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+<script src="/javascripts/fraudrankr-diagram.js"></script>

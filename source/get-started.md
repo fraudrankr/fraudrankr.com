@@ -4,44 +4,33 @@ title: Get started
 
 # Get Started
 
-## Pageview events
+To use Fraudrankr you’ll need to send us only two things:
 
-Copy-and-paste the following JavaScript snippet onto your site just before `</head>`.
+* Your transaction details
+* And you’ll need to tell us about your chargebacks
 
-```html
-<script type="text/javascript">
-window.FraudRankr = {
-  publishable_key: '<apikey>'
-  user: '<user@example.com>'
-};
-(function() {
-  function kickFraudRankr() {
-    var d = document, f = d.createElement('script');
-    f.type = 'text/javascript';
-    f.async = true;
-    f.src = (d.location.protocol == 'https:' ? 'https' : 'http') \
-            + '://c.fraudrankr.com/resources/t.js';
-    var s = d.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(f, s);
-    }
-    if (a = window.attachEvent) {
-      a('onload', kickFraudRankr);
-    } else {
-      window.addEventListener('load', kickFraudRankr, false);
-    }
-})();
-</script>
-```
+This is all we need in order to identify and predict fraud and chargebacks.
 
-## Transaction events
+## How to score a transaction
 
 ```bash
 echo '{
-    "apikey": "<apikey>",
-    "user_id": "1234",
-    "transaction_id": "ab1cd2-1234-5678",
-    "label": "chargeback",
-    "reason": "30"
+  "apikey": "<apikey>",
+  "user_id": "1234",
+  "user_ip": "219.231.41.48",
+  "transaction_id": "ab1cd2-1234-5678",
+  "label": "sale",
+  "amount": 25000,
+  "currency": "EUR",
+  "card": {
+    "bin": 411111,
+    "last4": 1234,
+    "name_on_card": "John Doe"
+  }
 }'
-curl -X POST -d - https://c.fraudrankr.com/labels
+curl -X POST -d - https://c.fraudrankr.com/transactions
 ```
+
+Read our [API docs](http://docs.fraudrankr.com/) to see more on how to get
+started with Fraudrankr.
+

@@ -1,0 +1,36 @@
+---
+title: Sign up for beta
+---
+/div.jumbotron
+  h1 Minimize fraud
+  p.lead FraudRankr monitors and scores fraud for you, so you can get on with business
+  a.btn.btn-large.btn-success href="/sign-up" Sign up for beta
+
+.container
+  .row
+    .col-lg-9.col-lg-offset-1.well
+      legend 
+        h1 Sign up for beta
+      form role="form" data-async="" data-target="" action="https://c.fraudrankr.com/accounts" method="POST"
+        .form-group
+          label for="name" Name
+          input.form-control type="text" name="name" placeholder="Name"
+        .form-group
+          label for="company" Company
+          input.form-control type="text" name="company" placeholder="Company name"
+        .form-group
+          label for="website" Website
+          input.form-control type="text" name="website" placeholder="Company website"
+        .form-group
+          label for="email" Email
+          input.form-control type="email" name="email" placeholder="Email"
+        .checkbox
+          label
+            input type="checkbox" Send me newsletter updates. You can unsubscribe at any time.
+        .form-group
+          p 
+            | Click Create account to agree to the 
+            a href="/tos" Fraudrankr Services Agreement
+            | .
+        .form-group.pull-right
+          button.btn.btn-success type="submit" Create account
