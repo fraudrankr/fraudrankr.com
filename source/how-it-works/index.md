@@ -1,5 +1,5 @@
 ---
-title: How it works
+title: Fraudrankr - How it works
 ---
 
 # How it works

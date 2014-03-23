@@ -1,5 +1,5 @@
 ---
-title: Terms of Service
+title: Fraudrankr - Terms of Service
 ---
 
 # Terms of Service
