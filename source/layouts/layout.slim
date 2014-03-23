@@ -10,10 +10,12 @@ html.no-js lang="en"
   | <!--<![endif]-->
   head
     /!
-     | You're reading. We're hiring.
-     | http://www.fraudrankr.com/jobs/
-     |
-
+      =
+      ===============================
+      You're reading. We're hiring.
+      http://www.fraudrankr.com/jobs/
+      ===============================
+      =
     meta charset="utf-8"
     meta http-equiv="X-UA-Compatible" content="IE=edge"
     / Use title if it's in the page YAML frontmatter
@@ -45,4 +47,5 @@ html.no-js lang="en"
         = yield
     div.container
       = partial "layouts/footer"
+    = partial "layouts/ga"
     script src="/javascripts/all.js"

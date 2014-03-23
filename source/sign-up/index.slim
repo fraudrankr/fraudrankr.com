@@ -1,24 +1,25 @@
 ---
 title: Sign up for beta
 ---
+
 .container
   .row
     .col-lg-9.col-lg-offset-1.well
       legend 
         h1 Sign up for beta
-      form role="form" data-async="" data-target="" action="https://c.fraudrankr.com/accounts" method="POST"
+      form#signup role="form" data-async="" data-target="" action="https://c.fraudrankr.com/accounts" method="POST"
         .form-group
           label for="name" Name
-          input.form-control type="text" name="name" placeholder="Name"
+          input.form-control type="text" name="name" placeholder="Name" required=""
         .form-group
           label for="company" Company
-          input.form-control type="text" name="company" placeholder="Company name"
+          input.form-control type="text" name="company" placeholder="Company name" required=""
         .form-group
           label for="website" Website
-          input.form-control type="text" name="website" placeholder="Company website"
+          input.form-control type="text" name="website" placeholder="Company website" required=""
         .form-group
           label for="email" Email
-          input.form-control type="email" name="email" placeholder="Email"
+          input.form-control type="email" name="email" placeholder="Email" required=""
         .checkbox
           label
             input type="checkbox" Send me newsletter updates. You can unsubscribe at any time.
@@ -29,3 +30,19 @@ title: Sign up for beta
             | .
         .pull-right
           button.btn.btn-success type="submit" Create account
+
+/! Modal
+#signupModal.modal.fade aria-hidden="true" aria-labelledby="signupModalLabel" role="dialog" tabindex="-1"
+  .modal-dialog
+    .modal-content
+      .modal-header
+        button.close aria-hidden="true" data-dismiss="modal" type="button" &times;
+        h4#signupModalLabel.modal-title Thank you
+      .modal-body#modal-body
+        p Check your mail ;-)
+      .modal-footer
+        button.btn.btn-default data-dismiss="modal" type="button" Close
+
+script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"
+script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"
+script src="/javascripts/sign-up.js"
