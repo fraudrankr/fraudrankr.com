@@ -17,5 +17,4 @@ reject the fraudulent customer.
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 <script src="http://code.highcharts.com/highcharts.js"></script>
-<script src="http://code.highcharts.com/modules/exporting.js"></script>
 <script src="/javascripts/fraudrankr-diagram.js"></script>
