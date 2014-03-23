@@ -41,7 +41,7 @@ $(function () {
                             fontWeight: 'bold'
                         })
                         .add();
-                    ren.label('FraudRankr', 220, 40)
+                    ren.label('Fraudrankr', 220, 40)
                         .css({
                             fontWeight: 'bold'
                         })
@@ -67,7 +67,7 @@ $(function () {
                         .add()
                         .shadow(true);
                     
-                    // Arrow from website to FraudRankr
+                    // Arrow from website to Fraudrankr
                     ren.path(rightArrow)
                          .attr({
                              'stroke-width': 2,
@@ -83,7 +83,7 @@ $(function () {
                         }) 
                         .add();
                     
-                    ren.label('FraudRankr<br/>', 210, 82)
+                    ren.label('Fraudrankr<br/>', 210, 82)
                         .attr({
                             r: 5,
                             width: 100,
@@ -118,7 +118,7 @@ $(function () {
                     
                     
                     
-                    // Arrow from CURL to FraudRankr
+                    // Arrow from CURL to Fraudrankr
                     ren.path(rightArrow)
                          .attr({
                              'stroke-width': 2,
@@ -151,7 +151,7 @@ $(function () {
                         .add()
                         .shadow(true);
                     
-                    // Arrow from Servers to FraudRankr
+                    // Arrow from Servers to Fraudrankr
                     ren.path(leftArrow)
                          .attr({
                              'stroke-width': 2,
@@ -167,7 +167,7 @@ $(function () {
                         })
                         .add();
                     
-                    // Arrow from FraudRankr to Servers
+                    // Arrow from Fraudrankr to Servers
                     ren.path(rightArrow)
                          .attr({
                              'stroke-width': 2,
@@ -183,7 +183,7 @@ $(function () {
             }
         },
         title: {
-            text: 'FraudRankr from events to scoring'
+            text: 'Fraudrankr from events to scoring'
         }
             
     });
