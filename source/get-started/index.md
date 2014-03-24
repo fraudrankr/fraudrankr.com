@@ -27,8 +27,7 @@ echo '{
     "last4": 1234,
     "name_on_card": "John Doe"
   }
-}'
-curl -X POST -d - https://c.fraudrankr.com/transactions
+}' | curl -X POST -d - https://c.fraudrankr.com/transactions
 ```
 
 Read our [API docs](http://docs.fraudrankr.com/) to see more on how to get
