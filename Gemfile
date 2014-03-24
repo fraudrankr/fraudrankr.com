@@ -17,6 +17,7 @@ gem 'sass'
 gem 'bootstrap-sass'
 gem 'font-awesome-middleman'
 gem 'middleman-sprockets'
+gem 'middleman-favicon-maker'
 
 # sitemap.xml
 gem 'builder'
