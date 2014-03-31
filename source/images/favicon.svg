@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
-<svg width="264" height="264" xmlns="http://www.w3.org/2000/svg">
+<svg width="300" height="300" xmlns="http://www.w3.org/2000/svg">
  <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
-
  <g>
   <title>background</title>
-  <rect fill="none" id="canvas_background" height="266" width="266" y="-1" x="-1"/>
-  <g display="none" id="canvasGrid">
-   <rect fill="url(#gridpattern)" stroke-width="0" y="2" x="2" height="400" width="580" id="svg_2"/>
+  <rect fill="#008cba" id="canvas_background" height="302" width="302" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
   </g>
  </g>
  <g>
   <title>Layer 1</title>
-  <text font-weight="normal" stroke="#000" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="216" id="svg_1" y="207" x="4.5" stroke-width="0" fill="#008cba" font-style="normal">F&#226;</text>
+  <rect stroke="#000" id="svg_2" height="30" width="300" y="270" x="-1" stroke-width="0" fill="#393939"/>
+  <text font-style="normal" font-weight="normal" stroke="#000" xml:space="preserve" text-anchor="left" font-family="Helvetica, Arial, sans-serif" font-size="250" id="svg_3" y="230.5" x="3" stroke-opacity="null" stroke-width="0" fill="#ffffff">F&#226;</text>
  </g>
 </svg>
